@@ -45,7 +45,7 @@ fun CoroutineScope.connectToSse(
         initialEventId = initialEventId,
         maybeAwaitConnectivity = maybeAwaitConnectivity,
         logger = logger,
-        random = random::nextLong
+        random = { random.nextLong(Long.MAX_VALUE) }
     )
 
 inline val Response.contentType: MediaType?
