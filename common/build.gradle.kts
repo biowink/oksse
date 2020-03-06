@@ -12,6 +12,7 @@ dependencies {
     testImplementation(kotlin("test-annotations-common"))
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutinesVersion")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion")
 }
 
 tasks {
